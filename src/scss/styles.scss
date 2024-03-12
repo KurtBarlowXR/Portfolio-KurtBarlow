@@ -1,8 +1,15 @@
 @use 'base/normalize.scss';
 @use 'base/initial-reset.scss';
 @use 'blocks/body.scss';
-@use 'blocks/titles.scss';
-@use 'blocks/texts.scss';
 @use 'blocks/buttons.scss';
 @use 'blocks/header.scss';
 @use 'blocks/footer.scss';
+@use 'config/variables.scss';
+@use 'blocks/main.scss';
+@use 'blocks/section.scss';
+@use 'blocks/texts.scss';
+@use 'blocks/titles.scss';
+@use 'blocks/div.scss';
+@use 'blocks/contact-card.scss';
+@use 'blocks/formContact.scss';
+@use 'blocks/developer.scss';

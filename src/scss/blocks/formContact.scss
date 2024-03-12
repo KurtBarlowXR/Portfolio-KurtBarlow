@@ -1,0 +1,33 @@
+@use '../mixins/responsive.scss' as*;
+
+.formContact{
+    
+    text-align: justify;
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input, textarea{
+        margin-bottom: 10px;
+        background-color: var(--secondary-color);
+        border: 0;
+        padding: 5px;
+    }
+    input:nth-child(6){
+        padding: 5px 40px;
+
+        &:hover{
+            background-color: var(--terciary-color);
+        }
+    }
+
+        @include responsive(tablet){
+
+        }
+
+        @include responsive(laptop){
+            margin-left: 20px;
+        }
+}

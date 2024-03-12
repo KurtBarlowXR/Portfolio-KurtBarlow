@@ -1,0 +1,69 @@
+@use '../mixins/responsive.scss' as*;
+
+
+.section{
+    margin: 20px 20px;
+
+    &--contact{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    &--about{
+        text-align: justify;
+    }
+    &--inspired{
+        padding: 10px 20px;
+        text-align: center;
+        color: var(--text-light);
+        background-color: var(--primary-color);
+    }
+    &--developer{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    }
+    &--preview{
+        display: none;
+        margin: 0;
+        padding: 2px;
+    }
+
+    @include responsive(tablet){
+        margin: 30px 40px;
+
+        &--inspired{
+            padding: 10px 30px;
+        }
+        &--preview{
+            display: block;
+            margin: 0px 36px;
+            padding-top: 5px 0px;
+
+                .preview-list{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 40px;
+                }
+        }
+        
+        
+    }
+
+    @include responsive(laptop){
+        &--contact{
+            flex-direction: row;
+        }
+        &--developer{
+            flex-direction: row;
+            gap: 40px;
+        }
+    }
+}

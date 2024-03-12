@@ -1,1 +1,14 @@
+@use '../mixins/responsive.scss' as*;
 
+.button{
+    padding: 5px 10px;
+    border: 0;
+    background-color: var(--secondary-color);
+
+    &--primary{
+        padding: 5px 15px;
+        &:hover{
+            background-color: var(--terciary-color);
+        }
+    }
+}

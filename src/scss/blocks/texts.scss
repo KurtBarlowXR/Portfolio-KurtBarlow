@@ -1,1 +1,16 @@
+.text{
+    color: var(--primary-color);
 
+    &--tiny{
+
+    }
+    &--bold{
+        font-weight: bold;
+    }
+    &--small{
+        
+    }
+    &--light{
+        color: var(--light);
+    }
+}

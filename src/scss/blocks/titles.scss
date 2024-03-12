@@ -1,1 +1,23 @@
+@use '../mixins/responsive.scss' as*;
 
+.title{
+    margin-bottom: 20px;
+    padding-top: 20px;
+
+    &--about{
+        padding-top: 0;
+    }
+
+    @include responsive(tablet){
+        &--about{
+            padding-top: 20px;
+        }
+    }
+
+    @include responsive(laptop){
+        padding-top: 0;
+        &--about{
+            padding-top: 0;
+        }
+    }
+}
